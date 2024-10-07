@@ -6,7 +6,6 @@ function App() {
   return (
     <div >
       <CadastroUser/>
-
       <h2 id="title">Cidade de SP pode ter novo recorde de calor do ano nesta quarta,<br/> com máxima de 36°C</h2>
       Índice supera os 35°C registrados nesta terça (24), maior temperatura do ano até agora, segundo dados do Instituo Nacional de Meteorologia (Inmet).
       <p>O calor deve dar uma pequena trégua apenas no sábado, quando a máxima não passa dos 24°C. No domingo, porém, a temperatura já volta a ficar acima dos 30°C.

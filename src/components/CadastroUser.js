@@ -17,11 +17,9 @@ function CadastroUser(){
     return(
         <div id="formulario">
             <form>
-                {nome}, {profissao}
-                Operação= (operation())
                 <h1>Cadastrar</h1>
                 <label htmlFor='nome'>Nome:</label>
-                <input type='text' name='nome' id='nome'/>
+                <input type='text' name='nome' id='nome'/><br></br>
 
                 <label htmlFor='email'>E-mail:</label>
                 <input type='email' name='email' id='email'/>
@@ -29,8 +27,8 @@ function CadastroUser(){
                 <label htmlFor='cpfcnpj'>CPF/CNPJ:</label>
                 <input type='text' name='cpfcnpj' id='cpfcnpj'/>
 
-                <label htmlFor='senha'>senha:</label>
-                <input type='password' name='senha' id='senha'/>
+                <label htmlFor='senha' >Senha:</label>
+                <input type='password' name='senha' id='senha'/><br></br>
 
                 <input type='button' value="Cadastrar"/>
                 
