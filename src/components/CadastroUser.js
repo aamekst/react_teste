@@ -1,17 +1,27 @@
 import './CadastroUser.css';
+import {useState} from 'react';
 
 function CadastroUser(){
+    const [email, SetEmail] = useState('')
+    console.log(email)
+
     let nome = "Alana";
     let profissao = "Dev";
 
-    function soma (){
-        return 2+5;
 
-    }
 
-    function operation(n1, n2){
-        return n1*n2
+   async function salvar(){
 
+        let api = await fetch("https://viacep.com.br/ws/"+email+"/json/");
+        let resposta = await api.json();
+
+        if(api.ok){
+            console.log(resposta)
+            return
+        }
+    
+        console.log(resposta);
+        
     }
 
     return(
@@ -22,7 +32,14 @@ function CadastroUser(){
                 <input type='text' name='nome' id='nome'/><br></br>
 
                 <label htmlFor='email'>E-mail:</label>
-                <input type='email' name='email' id='email'/>
+                <input 
+                    type='email' 
+                    name='email' 
+                    id='email'
+                    value={email}
+                    onChange={(e) => SetEmail(e.target.value)}
+                    
+                    />
 
                 <label htmlFor='cpfcnpj'>CPF/CNPJ:</label>
                 <input type='text' name='cpfcnpj' id='cpfcnpj'/>
@@ -30,7 +47,7 @@ function CadastroUser(){
                 <label htmlFor='senha' >Senha:</label>
                 <input type='password' name='senha' id='senha'/><br></br>
 
-                <input type='button' value="Cadastrar"/>
+                <input onClick={salvar} type='button' value="Cadastrar"/>
                 
             </form>
             

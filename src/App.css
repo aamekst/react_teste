@@ -1,6 +1,13 @@
 #title{
   color: orange;
   text-align: center;
+  
+}
 
+body{
+  margin: 30px;
+}
 
+p{
+  text-align: justify;
 }
