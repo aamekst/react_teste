@@ -30,6 +30,11 @@ function CadastroUser() {
 
         let resposta = await api.json();
 
+        if (!nome || !email || !cpfcnpj || !senha) {
+            alert("Por favor, preencha todos os campos obrigatórios.");
+            return; 
+        }
+
         if (api.ok) {
             console.log("Usuário cadastrado com sucesso:", resposta);
             alert("Usuário cadastrado com sucesso. Bem vindo, "+ nome);
@@ -37,7 +42,6 @@ function CadastroUser() {
             setEmail('');
             setCpfCnpj('');
             setSenha('');
-            
         } else {
             console.error("Erro ao cadastrar o usuário:", resposta);
             alert("Erro ao cadastrar usuário.");
@@ -83,7 +87,7 @@ function CadastroUser() {
                     id='senha'
                     value={senha}
                     onChange={(e) => setSenha(e.target.value)}
-                /><br />
+                /><br /><br></br>
 
                 <input type='submit' value="Cadastrar" />
             </form>
