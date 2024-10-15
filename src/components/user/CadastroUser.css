@@ -1,0 +1,61 @@
+#formulario{
+    background-color: rgb(215, 240, 253);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: rgba(188, 198, 255, 0.4) 5px 5px, rgba(43, 9, 236, 0.3) 10px 10px, rgba(92, 80, 255, 0.2) 15px 15px, rgba(158, 133, 248, 0.1) 20px 20px, rgba(42, 7, 245, 0.05) 25px 25px;
+
+}
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+input[type=text], select{
+    width: 90%;
+    border-radius: 15px;
+    border: 1px solid rgb(135, 122, 255);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+input[type=email], select{
+    width: 90%;
+    border-radius: 15px;
+    border: 1px solid rgb(135, 122, 255);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+input[type=password], select{
+    width: 90%;
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid rgb(135, 122, 255);
+    margin-bottom: 20px;
+}
+
+input[type=submit], select{
+    width: 30%;
+    padding: 5px;
+    background-color: rgb(75, 1, 136);
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    border-color: black;
+ 
+}
+
+label {
+    display: block; /* Alinha as labels à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 22px;
+    margin-bottom: 5px; /* Espaçamento entre a label e o input */
+}
+
+
+

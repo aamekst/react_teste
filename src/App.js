@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import CadastroUser from './components/CadastroUser';
+import CadastroUser from './components/user/CadastroUser';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
+
     <div >
       <h2 id="title">Cidade de SP pode ter novo recorde de calor do ano nesta quarta,<br/> com máxima de 36°C</h2>
       Índice supera os 35°C registrados nesta terça (24), maior temperatura do ano até agora, segundo dados do Instituo Nacional de Meteorologia (Inmet).

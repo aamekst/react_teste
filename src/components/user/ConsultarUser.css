@@ -1,0 +1,55 @@
+.c-card {
+    padding: 0.5rem;
+    margin: 2.5rem;
+    background-color: white;
+    box-shadow: rgba(188, 198, 255, 0.4) 5px 5px, rgba(43, 9, 236, 0.3) 10px 10px, rgba(92, 80, 255, 0.2) 15px 15px, rgba(158, 133, 248, 0.1) 20px 20px, rgba(42, 7, 245, 0.05) 25px 25px;
+    text-align: center;
+    border:rgba(43, 9, 236, 0.3) solid 2px ;
+    border-radius: 15px;
+    width: 20rem;
+    height: 10rem;
+}
+
+.users-list {
+    display: flex;            /* Faz os cartões ficarem lado a lado */
+    flex-wrap: wrap;          /* Permite que os cartões quebrem para a linha de baixo se não houver espaço */
+    justify-content: center;  /* Centraliza os cartões horizontalmente */
+    gap: 1rem;                /* Espaço entre os cartões */
+}
+
+
+.c-card h2 {
+padding: 0.5rem;
+font-size: 1.5rem;
+color: rgba(43, 9, 236, 0.767);
+}
+
+.c-card p {
+width: 20rem;
+text-align: center;
+color: black;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#lista{
+    background-color: blueviolet;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 1px;
+    color: white;
+    width: 50%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    display: block;
+    box-shadow: red;
+}
+
+#lista h1{
+    margin: 5px auto;
+    padding: 3px;
+    text-align: center;
+
+}

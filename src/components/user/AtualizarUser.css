@@ -1,5 +1,5 @@
-#formulario{
-    background-color: rgb(215, 240, 253);
+#formu{
+    background-color: #f4ecff;
     max-width: 500px;
     margin: 0 auto;
     padding: 10px;
@@ -8,10 +8,15 @@
     margin-top: 100px;
     box-shadow: rgba(188, 198, 255, 0.4) 5px 5px, rgba(43, 9, 236, 0.3) 10px 10px, rgba(92, 80, 255, 0.2) 15px 15px, rgba(158, 133, 248, 0.1) 20px 20px, rgba(42, 7, 245, 0.05) 25px 25px;
 
-
 }
 h1{
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: white;
 }
 
 input[type=text], select{
@@ -36,13 +41,15 @@ input[type=password], select{
     margin-bottom: 20px;
 }
 
-input[type=submit], select{
+button[type=submit], select{
     width: 30%;
     padding: 5px;
-    background-color: rgb(75, 1, 136);
+    background-color: #ff615e;
     color: white;
     border-radius: 20px;
     margin: 5px;
+    padding: 2px;
+    font-size: 20px;
     border-color: black;
  
 }

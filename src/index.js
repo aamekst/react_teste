@@ -4,7 +4,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CadastroUser from './components/CadastroUser';
+import CadastroUser from './components/user/CadastroUser';
+import ConsultarUser from './components/user/ConsultarUser';
+import AtualizarUser from './components/user/AtualizarUser';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +16,8 @@ root.render(
     <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='/cadastro_user' element={<CadastroUser/>}/>
+      <Route path='/listar_user' element={<ConsultarUser/>}/>
+      <Route path='/atualizar_user/:id' element={<AtualizarUser/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
