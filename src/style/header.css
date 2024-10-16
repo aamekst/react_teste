@@ -1,6 +1,6 @@
 #navbar {
-    background-color: rgb(75, 1, 136);
-    box-shadow: black solid 5px;
+    background-color: rgba(75, 1, 136, 0.756);
+
     width: 100%; /* Mude para 100% para ocupar a largura total da tela */
     margin-bottom: 20px;
     padding: 10px;

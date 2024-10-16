@@ -5,9 +5,19 @@
 }
 
 body{
-  margin: 30px;
+  background: #F4ECFF;
 }
 
 p{
   text-align: justify;
+}
+
+
+#saleImagem {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  margin: 0 auto;          /* Garante que o container fique centralizado */
 }
