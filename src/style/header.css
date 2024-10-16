@@ -1,0 +1,29 @@
+#navbar {
+    background-color: rgb(75, 1, 136);
+    box-shadow: black solid 5px;
+    width: 100%; /* Mude para 100% para ocupar a largura total da tela */
+    margin-bottom: 20px;
+}
+
+#basic-nav-dropdown {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;               /* Define o contêiner como flex */
+    justify-content: center;     /* Centraliza os itens horizontalmente */
+    align-items: center;         /* Centraliza os itens verticalmente */
+                /* Define altura completa da tela para centralização vertical */
+}
+
+.navbar-nav {
+    margin: 0 auto;              /* Centraliza a lista de navegação */
+    display: flex;               /* Flexbox para os itens do menu */
+    justify-content: center;     /* Centraliza os itens do menu horizontalmente */
+    flex-wrap: wrap;            /* Permite que os itens quebrem para a próxima linha se não houver espaço */
+}
+
+.nav-item {
+    margin: 0 15px;             /* Adiciona espaçamento entre os itens do menu */
+}

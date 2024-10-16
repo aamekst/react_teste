@@ -6,7 +6,7 @@
     text-align: center;
     border:rgba(43, 9, 236, 0.3) solid 2px ;
     border-radius: 15px;
-    width: 20rem;
+    width: 21rem;
     height: 10rem;
 }
 
@@ -35,11 +35,13 @@ body{
 }
 
 #lista{
-    background-color: blueviolet;
+    background-color: #28edd8;
     margin: 20px auto;
     border-radius: 30px;
     padding: 1px;
     color: white;
+    border: #208f84b9 solid 1px;
+    
     width: 50%;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */

@@ -1,6 +1,7 @@
-import './ConsultarUser.css';
+import '../../style/ConsultarUser.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importando useNavigate para navegação
+import Header from '../../components/Header';
 
 function ConsultarUser() {
     const [users, setUsers] = useState([]); // Estado para armazenar os usuários
@@ -33,6 +34,10 @@ function ConsultarUser() {
     };
 
     return (
+        <>
+        <div>
+            <Header/>
+        </div>
         <div>
             <div id='lista'>
                 <h1>Usuários</h1></div>
@@ -55,6 +60,7 @@ function ConsultarUser() {
                 )}
             </div>
         </div>
+        </>
     );
 }
 

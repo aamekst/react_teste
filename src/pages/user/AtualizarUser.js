@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import './AtualizarUser.css';
+import '../../style/AtualizarUser.css';
+import Header from '../../components/Header';
 
 function AtualizarUser() {
     const [user, setUser] = useState({
@@ -47,6 +48,10 @@ function AtualizarUser() {
     };
 
     return (
+        <>
+        <div>
+            <Header/>
+        </div>
         <div id="formu">
             <h1>Atualizar Usuário</h1>
             <form onSubmit={updateUser}>
@@ -81,6 +86,7 @@ function AtualizarUser() {
                 <button type="submit">Atualizar</button>
             </form>
         </div>
+        </>
     );
 }
 

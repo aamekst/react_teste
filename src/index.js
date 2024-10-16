@@ -4,9 +4,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CadastroUser from './components/user/CadastroUser';
-import ConsultarUser from './components/user/ConsultarUser';
-import AtualizarUser from './components/user/AtualizarUser';
+import CadastroUser from './pages/user/CadastroUser';
+import ConsultarUser from './pages/user/ConsultarUser';
+import AtualizarUser from './pages/user/AtualizarUser';
+import Nopage from './components/Nopage';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +20,7 @@ root.render(
       <Route path='/cadastro_user' element={<CadastroUser/>}/>
       <Route path='/listar_user' element={<ConsultarUser/>}/>
       <Route path='/atualizar_user/:id' element={<AtualizarUser/>}/>
+      <Route path='*' element={<Nopage/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
