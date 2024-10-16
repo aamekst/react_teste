@@ -3,12 +3,19 @@
     box-shadow: black solid 5px;
     width: 100%; /* Mude para 100% para ocupar a largura total da tela */
     margin-bottom: 20px;
+    padding: 10px;
+    color: whitesmoke;
 }
 
 #basic-nav-dropdown {
     color: whitesmoke;
     font-size: 20px;
 }
+
+#home{
+    color: white;
+}
+
 
 #container {
     display: flex;               /* Define o contêiner como flex */

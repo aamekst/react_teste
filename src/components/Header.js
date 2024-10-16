@@ -12,7 +12,7 @@ export default function Header() {
         <>
             <div id='container'>
                 <Navbar id='navbar' expand="lg">
-                    <Navbar.Brand href="#"></Navbar.Brand>
+                    <Navbar.Brand id='home'href="/">Home</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
