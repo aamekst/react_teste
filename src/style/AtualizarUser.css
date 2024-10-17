@@ -54,12 +54,6 @@ button[type=submit], select{
  
 }
 
-label {
-    display: block; /* Alinha as labels à esquerda */
-    text-align: left; /* Alinha o texto à esquerda */
-    margin-left: 22px;
-    margin-bottom: 5px; /* Espaçamento entre a label e o input */
-}
 
 
 

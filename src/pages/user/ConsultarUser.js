@@ -50,13 +50,13 @@ function ConsultarUser() {
                             onClick={() => handleCardClick(user.id)} // Função de navegação no clique
                             style={{ cursor: 'pointer' }} // Mostra que o cartão é clicável
                         >
-                            <h2>{user.name}</h2>
+                            <h2>{user.id} - {user.name}</h2>
                             <p>{user.email}</p>
                             <p>CPF/CNPJ: {user.cpfcnpj}</p>
                         </div>
                     ))
                 ) : (
-                    <p>Carregando usuários...</p>
+                    <p></p>
                 )}
             </div>
         </div>

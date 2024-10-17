@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import carrinhoImg from './images/carrinho.png';  // Caminho correto para a imagem
+import carrinhoImg from './images/carrinho.png';   // Caminho correto para a imagem
 import Header from './components/Header';
 import './App.css';
 
