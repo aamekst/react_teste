@@ -1,0 +1,55 @@
+#formSave{
+    background-color: #ffe4de;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: #ff615e 5px 5px, #ff615ec5 10px 10px, #ff615e63 15px 15px, #ff615e57 20px 20px, #ffe4de 25px 25px;
+
+}
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+input[type=text], select{
+    width: 90%;
+    border-radius: 30px;
+    border: 1px solid #ff615e;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type=numeric], select{
+    width: 90%;
+    border-radius: 30px;
+    padding: 5px;
+    border: 1px solid #ff615e;
+    margin-bottom: 20px;
+}
+
+input[type=submit], select{
+    width: 30%;
+    padding: 5px;
+    background-color: #773FA5;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+    border-color: black;
+ 
+}
+
+label {
+    display: block; /* Alinha as labels à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 22px;
+    margin-bottom: 5px; /* Espaçamento entre a label e o input */
+}
+
+
+

@@ -8,6 +8,7 @@ import CadastroUser from './pages/user/CadastroUser';
 import ConsultarUser from './pages/user/ConsultarUser';
 import AtualizarUser from './pages/user/AtualizarUser';
 import Nopage from './components/Nopage';
+import CadastroProduto from './pages/Produto/CadastroProduto';
 
 
 
@@ -20,6 +21,7 @@ root.render(
       <Route path='/cadastro_user' element={<CadastroUser/>}/>
       <Route path='/listar_user' element={<ConsultarUser/>}/>
       <Route path='/atualizar_user/:id' element={<AtualizarUser/>}/>
+      <Route path='/cadastro_produto' element={<CadastroProduto/>}/>
       <Route path='*' element={<Nopage/>}/>
     </Routes>
     </BrowserRouter>
