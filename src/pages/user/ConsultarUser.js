@@ -39,7 +39,7 @@ function ConsultarUser() {
             <Header/>
         </div>
         <div>
-            <div id='lista'>
+            <div id='lista-user'>
                 <h1>Usuários</h1></div>
             <div className="users-list">
                 {users.length > 0 ? (
@@ -47,8 +47,8 @@ function ConsultarUser() {
                         <div 
                             key={user.id} 
                             className="c-card"
-                            onClick={() => handleCardClick(user.id)} // Função de navegação no clique
-                            style={{ cursor: 'pointer' }} // Mostra que o cartão é clicável
+                            onClick={() => handleCardClick(user.id)} 
+                            style={{ cursor: 'pointer' }}
                         >
                             <h2>{user.id} - {user.name}</h2>
                             <p>{user.email}</p>

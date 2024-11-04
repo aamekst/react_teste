@@ -9,6 +9,8 @@ import ConsultarUser from './pages/user/ConsultarUser';
 import AtualizarUser from './pages/user/AtualizarUser';
 import Nopage from './components/Nopage';
 import CadastroProduto from './pages/Produto/CadastroProduto';
+import ListarProduto from './pages/Produto/ListarProduto';
+import AtualizarProduto from './pages/Produto/AtualizarProduto';
 
 
 
@@ -19,9 +21,12 @@ root.render(
     <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='/cadastro_user' element={<CadastroUser/>}/>
-      <Route path='/listar_user' element={<ConsultarUser/>}/>
+     
       <Route path='/atualizar_user/:id' element={<AtualizarUser/>}/>
       <Route path='/cadastro_produto' element={<CadastroProduto/>}/>
+      <Route path='/listar_produto' element={<ListarProduto/>}/>
+      <Route path='/listar_user' element={<ConsultarUser/>}/>
+      <Route path='/atualizar_produto/:id' element={<AtualizarProduto/>}/>
       <Route path='*' element={<Nopage/>}/>
     </Routes>
     </BrowserRouter>

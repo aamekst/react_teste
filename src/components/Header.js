@@ -21,9 +21,8 @@ export default function Header() {
                                 <NavDropdown.Item href="/cadastro_user">Cadastrar</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Produto" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#">Consultar</NavDropdown.Item>
+                                <NavDropdown.Item href="/listar_produto">Consultar</NavDropdown.Item>
                                 <NavDropdown.Item href="/cadastro_produto">Cadastrar</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Atualizar</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Venda" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#">Consultar</NavDropdown.Item>

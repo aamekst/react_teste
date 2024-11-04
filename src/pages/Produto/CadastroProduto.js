@@ -39,6 +39,7 @@ export default function CadastroProduto(){
             setPreco('');
             setQuantidade('');
             setQuantidade('');
+            navigate('/listar_produto');
         }else{
             alert("Erro ao cadastrar");
         }
