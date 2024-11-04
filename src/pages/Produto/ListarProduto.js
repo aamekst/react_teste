@@ -2,6 +2,9 @@ import '../../style/ConsultarProduto.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importando useNavigate para navegação
 import Header from '../../components/Header';
+import comprarImg from '../../images/comprar.png'
+import lapisImg from '../../images/lapis.png'
+
 
 function ConsultarProduto(){
     const [produtos, setProduto] = useState([]); // Estado para armazenar os usuários
@@ -28,9 +31,16 @@ function ConsultarProduto(){
     }, []);
 
     // Função simples para redirecionar
-    const handleCardClick = (produtoId) => {
-        navigate(`/atualizar_produto/${produtoId}`); // Redireciona para a rota de atualização com o ID do usuário
+    const handleUpdateClick = (produtoId) => {
+        navigate(`/atualizar_produto/${produtoId}`);
     };
+
+    // Função para redirecionar para a rota de compra
+    const handleBuyClick = (produtoId) => {
+        navigate(`/cadastro_venda/${produtoId}`);
+    };
+
+    const formatarMoeda = (valor) => `R$ ${valor.toFixed(2)}`;
 
     return (
         <>
@@ -46,13 +56,17 @@ function ConsultarProduto(){
                         <div id='flex'
                             key={produto.id} 
                             className="c-card-prod"
-                            onClick={() => handleCardClick(produto.id)} 
                             style={{ cursor: 'pointer' }}
                         >
-                            <a>{produto.id} - {produto.nome}</a><a> Quantidade: {produto.quantidade}</a> <a>Preço: R${produto.preco}</a>
-                            <button id='editar1'>Editar</button>
+                            <a>{produto.id} - {produto.nome}</a><a> Quantidade: {produto.quantidade}</a> <a>Preço: {formatarMoeda(produto.preco)}</a>
+                            <><button id='editar1' onClick={() => handleUpdateClick(produto.id)}><img src={lapisImg} alt="Editar" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+                            </button>
+                            <button id="editar1"  onClick={() => handleBuyClick(produto.id)} style={{ display: 'flex', alignItems: 'center' }}>
+                                <img src={comprarImg} alt="Adicionar no carrinho" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+                            </button></>
 
-                        </div>                   
+                        </div>   
+                                        
                          ))
                 ) : (
                     <p></p>

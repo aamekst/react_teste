@@ -16,8 +16,8 @@ export default function CadastroProduto(){
 
         const produto ={
             nome: nome,
-            preco: preco,
-            quantidade: quantidade,
+            preco: parseFloat(preco),
+            quantidade: parseInt(quantidade),
             user_id: user_id,
 
         };
@@ -67,7 +67,7 @@ export default function CadastroProduto(){
 
                     <label htmlFor='preco'>Preço unitário:</label>
                     <input 
-                        type='numeric' 
+                        type='text' 
                         name='preco' 
                         id='preco'
                         value={preco}
@@ -76,7 +76,7 @@ export default function CadastroProduto(){
 
                     <label htmlFor='quantidade'>Quantidade:</label>
                     <input 
-                        type='numeric' 
+                        type='number' 
                         name='quantidade' 
                         id='quantidade'
                         value={quantidade}
@@ -85,7 +85,7 @@ export default function CadastroProduto(){
 
                     <label htmlFor='user_id'>ID do usuário:</label>
                     <input 
-                        type='numeric' 
+                        type='number' 
                         name='user_id' 
                         id='user_id'
                         value={user_id}

@@ -43,7 +43,7 @@ body{
     color: white;
     border: #cf3f3d solid 1px;
     
-    width: 50%;
+    width: 90%;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     display: block;
@@ -57,21 +57,28 @@ body{
 
 }
 
-#flex{
-    display: flex; 
-    justify-content: space-between;
+#flex {
+    display: flex;
     align-items: center;
-    padding: 30px 30px ;
-    
+    gap: 8px; /* Controla o espaço entre os elementos no flex */
+    padding: 30px;
 }
 
-#editar1{
-    color: white;
-    background-color: #753DA3;
-    border-radius: 40px;
-  
-    width: 100px;
-    height: 50px;
-    border: #39115a 2px solid;
+#editar1 {
+    background-color: white;
+    border: none; /* Remove a borda */
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding interno do botão */
 
+}
+
+#editar1 img {
+    margin-right: 4px; /* Espaço entre a imagem e o texto ou entre imagens */
+    display: right;
+}
+
+#flex a {
+    flex: 1; /* Faz cada link ocupar o mesmo espaço */
+    text-align: left;
 }
