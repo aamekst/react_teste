@@ -1,0 +1,85 @@
+.c-card-venda {
+    padding: 0.5rem;
+    margin: 2rem;
+    background-color: white;
+    text-align: center;
+    box-shadow:  #773fa5b1 5px 5px,  #773fa554 10px 10px;
+    border: #773FA5 solid 2px;
+    border-radius: 15px;
+    width: 80rem;
+    height: 5rem;
+}
+
+.venda-list {
+    display: flex;            /* Faz os cartões ficarem lado a lado */
+    flex-wrap: wrap;          /* Permite que os cartões quebrem para a linha de baixo se não houver espaço */
+    justify-content: center;  /* Centraliza os cartões horizontalmente */
+    gap: 0.5rem;                /* Espaço entre os cartões */
+}
+
+
+.c-card-venda h2 {
+padding: 0.5rem;
+font-size: 1.5rem;
+color: rgba(43, 9, 236, 0.767);
+}
+
+.c-card-venda p {
+width: 40rem;
+text-align: left;
+justify-content: center;
+color: black;
+word-spacing: 10px  
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#listas{
+    background-color:#BA68C8;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 1px;
+    color: white;
+    border: #ae4cc0 solid 1px;
+    
+    width: 90%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    display: block;
+  
+}
+
+#listas h1{
+    margin: 5px auto;
+    padding: 3px;
+    text-align: center;
+
+}
+
+#flex {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Controla o espaço entre os elementos no flex */
+    padding: 30px;
+}
+
+#editar1 {
+    background-color: white;
+    border: none; /* Remove a borda */
+    display: flex;
+    align-items: center;
+    padding: 0; /* Remove padding interno do botão */
+
+}
+
+#editar1 img {
+    margin-right: 4px; /* Espaço entre a imagem e o texto ou entre imagens */
+    display: right;
+}
+
+#flex a {
+    flex: 1; /* Faz cada link ocupar o mesmo espaço */
+    text-align: left;
+}

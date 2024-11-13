@@ -26,3 +26,27 @@ input[type=number], select{
 
  
 }
+
+.carrinho-container {
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-top: 80px;
+    gap:-10px;
+    padding: 50px;
+}
+
+#formulario2 {
+    margin-top: -80px;
+    flex: 1; /* Permite que o formulário ocupe o espaço restante */
+    margin-left: -10px;
+
+}
+
+/* Você pode ajustar a imagem conforme necessário */
+.carrinho-container img {
+    max-width: 32%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da altura */
+    margin-top: -70px;
+    margin-left: 15%;
+}
+
