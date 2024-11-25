@@ -26,9 +26,7 @@ export default function Header() {
                             </NavDropdown>
                             <NavDropdown title="Venda" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/listar_venda">Consultar</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Realizar pedido</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#">Atualizar?</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

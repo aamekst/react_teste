@@ -13,6 +13,8 @@ import ListarProduto from './pages/Produto/ListarProduto';
 import AtualizarProduto from './pages/Produto/AtualizarProduto';
 import CadastroVenda from './pages/Venda/CadastroVenda';
 import ListarVenda from './pages/Venda/ListarVenda';
+import AtualizarVenda from './pages/Venda/AtualizarVenda';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +31,7 @@ root.render(
       <Route path='/atualizar_produto/:id' element={<AtualizarProduto/>}/>
       <Route path='/cadastro_venda/:id' element={<CadastroVenda/>}/>
       <Route path='/listar_venda' element={<ListarVenda/>}/>
+      <Route path='/atualizar_venda/:id' element={<AtualizarVenda/>}/>
       <Route path='*' element={<Nopage/>}/>
     </Routes>
     </BrowserRouter>
