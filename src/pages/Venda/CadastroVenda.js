@@ -77,7 +77,7 @@ export default function CadastroVenda() {
                 alert("Venda realizada com sucesso!");
                 setUserId('');
                 setQuantidade(1);
-                navigate('/listar_produto');
+                navigate('/listar_venda');
             } else {
                 const errorData = await response.json();
                 console.error("Erro ao realizar venda:", errorData);
