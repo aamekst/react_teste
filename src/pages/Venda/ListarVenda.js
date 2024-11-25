@@ -2,6 +2,10 @@ import '../../style/ConsultarVenda.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Hook para navegação
 import Header from '../../components/Header';
+import DeletarImg from '../../images/deletar.png';
+import lapisImg from '../../images/lapis.png';
+
+
 
 function ConsultarVenda() {
     const [vendas, setVendas] = useState([]); // Estado para armazenar as vendas
@@ -39,6 +43,23 @@ function ConsultarVenda() {
         navigate(`/atualizar_venda/${vendaId}`);
     };
 
+    const handleDelete = async (vendaId) => {
+        if (!window.confirm(`Tem certeza que deseja deletar o venda ${vendaId}?`)) return;
+
+        const response = await fetch(`http://localhost:8000/api/produtos/deletar/${vendaId}`, {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+        });
+
+        if (response.ok) {
+            alert(`Venda ${vendaId} deletado com sucesso!`);
+            setVendas((prevProdutos) => prevProdutos.filter((produto) => produto.id !== vendaId));
+        } else {
+            alert("Erro ao deletar o venda.");
+        }
+    };
+
+
     // Função para formatar valores monetários
     const formatarMoeda = (valor) => `R$ ${valor.toFixed(2).replace('.', ',')}`;
 
@@ -55,17 +76,28 @@ function ConsultarVenda() {
                     {vendas.length > 0 ? (
                         vendas.map(venda => (
                             <div
-                                key={venda.id} 
-                                className="c-card-venda"
-                                id="flex"
-                                style={{ cursor: 'pointer' }}
-                                onClick={() => handleUpdateClick(venda.id)} // Redireciona ao clicar no card
-                            >
+                            key={venda.id} // A chave deve estar diretamente no elemento de nível superior dentro do map
+                            className="c-card-venda"
+                            id="flex"
+                            style={{ cursor: 'pointer' }}
+                        >
+                        
                                 <p>ID: {venda.id}</p>
                                 <p>Produto: {venda.nomeProduto}</p>
                                 <p>Quantidade: {venda.quantidade}</p>
                                 <p>Preço: {formatarMoeda(venda.preco)}</p>
                                 <p>Usuário: {venda.nomeCliente}</p>
+
+                                <button 
+                                style={{ border: 'none', background: 'none', cursor: 'pointer' }} 
+                                onClick={() => handleUpdateClick(venda.id)}
+                            ><img src={lapisImg} alt="Editar" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+
+                            </button>
+
+                                <button onClick={() => handleDelete(venda.id)} style={{ border: 'none', background: 'none', cursor: 'pointer' }}>
+                                    <img src={DeletarImg} alt="Excluir venda" style={{ width: '24px', height: '24px' }} />
+                                </button>
                             </div>   
                         ))
                     ) : (
